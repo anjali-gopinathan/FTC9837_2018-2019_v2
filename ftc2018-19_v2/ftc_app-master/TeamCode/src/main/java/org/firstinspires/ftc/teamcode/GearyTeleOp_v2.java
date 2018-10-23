@@ -7,12 +7,12 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
  * Created by Anjali on 10/19/2018.
  */
 
-@TeleOp(name="TeleOp: Geary", group="Linear Opmode")
+@TeleOp(name="TeleOp: Geary v2", group="Linear Opmode")
 public class GearyTeleOp_v2 extends LinearOpMode{
     Hardware9837_geary_v2 geary = new Hardware9837_geary_v2();
-
     @Override
     public void runOpMode() {
+        geary.init(hardwareMap);
         waitForStart();
 
         while (opModeIsActive()) {

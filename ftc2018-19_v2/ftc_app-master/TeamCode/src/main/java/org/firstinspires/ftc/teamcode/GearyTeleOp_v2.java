@@ -20,7 +20,7 @@ public class GearyTeleOp_v2 extends LinearOpMode{
             double rightDrive = gamepad1.right_stick_y;
 
             geary.leftMotor.setPower(leftDrive);
-            geary.rightMotor.setPower(rightDrive);
+            geary.rightMotor.setPower(-rightDrive);
 
         }
     }
